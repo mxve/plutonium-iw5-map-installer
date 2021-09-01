@@ -29,10 +29,10 @@ Module Module1
         Dim plutoPath As String = localAppData + "\Plutonium\storage\iw5\"
 
         Console.Title = "IW5 map installer"
-        WriteLineColor(vbNewLine + center("Plutonium IW5 map installer by mxve") + vbNewLine, ConsoleColor.DarkMagenta)
+        WriteLineColor(vbNewLine + center("Plutonium IW5 map installer by mxve"), ConsoleColor.DarkMagenta)
 
         For Each d As String In Directory.GetDirectories("maps")
-            WriteLineColor(spacer, ConsoleColor.DarkGray)
+            WriteLineColor(vbNewLine + spacer(), ConsoleColor.DarkGray)
             WriteLineColor(vbNewLine + center(d.Split("\")(1)) + vbNewLine, ConsoleColor.Yellow)
 
             If File.Exists(d + "\readme.txt") Then
