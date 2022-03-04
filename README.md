@@ -1,3 +1,6 @@
+# Obsolete
+## Use usermaps & fastdl
+
 # Plutonium IW5 map installer
 
 ![screen1](screen1.png)
